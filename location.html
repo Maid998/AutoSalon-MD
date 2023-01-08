@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Salon MD - Lokacija</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="backgroundimg">
+        <img src="img/background.jpg" alt="">
+    </div>
+<div class="logo">
+        <img src="img/audi-logo.png" alt="">
+<script>
+   item.onmouseenter = function(){
+   this.classList.add('hovered');
+}
+
+item.onmouseleave = function(){
+   setTimeout(function(){
+      this.classList.remove('hovered');
+   }.bind(this),1000)
+}
+</script>
+<div class="nav">
+    <nav class="navMenu">
+        <a href="/index.html">Početna</a>
+      <a href="/about.html"> O nama</a>
+      <a href="/location.html">Lokacija</a>
+      <a href="/contact.html">Kontakt</a>
+                <div class="dot"></div>
+      </nav>
+</div>
+</div>
+<div class="location">
+Gdje se nalazimo?
+<p id="loctext">Ulica Mehmeda Spahe bb, 72220 Zavidovići</p>
+
+<iframe id="loc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.093317960518!2d18.141089315159025!3d44.43124797910221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe13a3a5112ca9128!2zNDTCsDI1JzUyLjUiTiAxOMKwMDgnMzUuOCJF!5e0!3m2!1shr!2sba!4v1673202863340!5m2!1shr!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="copyright">
+    Projektni zadatak iz predmeta "Web arhitekture". Powered by Maid Dubravac (maid.dubravac@fsk.unsa.ba).
+  </div>
+  
+  <input type="button" id="button3" onclick="topFunction()" title="Idi na vrh" value="⬆">
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("button3").style.display = "block";
+  } else {
+    document.getElementById("button3").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
+}
+</script>
+
+  <script>
+      window.onbeforeunload = function () {
+              window.scrollTo(0, 0);
+          };    
+      </script>
+</body>
+</html>

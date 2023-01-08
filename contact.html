@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Salon MD - Kontakt</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="backgroundimg">
+        <img src="img/background.jpg" alt="">
+    </div>
+<div class="logo">
+        <img src="img/audi-logo.png" alt="">
+<script>
+   item.onmouseenter = function(){
+   this.classList.add('hovered');
+}
+
+item.onmouseleave = function(){
+   setTimeout(function(){
+      this.classList.remove('hovered');
+   }.bind(this),1000)
+}
+</script>
+<div class="nav">
+    <nav class="navMenu">
+        <a href="/index.html">Početna</a>
+      <a href="/about.html"> O nama</a>
+      <a href="/location.html">Lokacija</a>
+      <a href="/contact.html">Kontakt</a>
+        <div class="dot"></div>
+      </nav>
+
+</div>
+</div>
+<div class="contact">
+    Kontaktirajte nas!
+    <form action="https://formsubmit.co/7c3380d887d6bb6bc4174c16ce0f1db5" method="POST" />
+<input type="text" name="name" placeholder="Vaše ime i prezime" maxlength="120" required>
+<input type="number" name="number" placeholder="Vaš broj telefona" required>
+<input type="email" name="email" placeholder="Vaša email adresa" required>
+<textarea type="freeform" name="freeform" id="textarea" maxlength="500" placeholder="Vaša poruka" rows="4" cols="50"></textarea>
+<input type="hidden" name="_subject" value="Novi kontakt!">
+<input type="hidden" name="_template" value="table">
+<button id="button2" type="submit">Pošalji</button>
+</div>
+
+<div class="contactnr">
+ili na brojeve telefona: <br>
++38762/929-318 <br>
++38732/888-777
+</div>
+
+
+
+</div>
+
+<div class="copyright">
+    Projektni zadatak iz predmeta "Web arhitekture". Powered by Maid Dubravac (maid.dubravac@fsk.unsa.ba).
+  </div>
+  
+  <input type="button" id="button3" onclick="topFunction()" title="Idi na vrh" value="⬆">
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("button3").style.display = "block";
+  } else {
+    document.getElementById("button3").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
+}
+</script>
+
+  <script>
+      window.onbeforeunload = function () {
+              window.scrollTo(0, 0);
+          };    
+      </script>
+      
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Salon MD</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <div class="preloader">
+ <img src="img/start.gif" alt="">
+<script> setTimeout(function() {
+    var preloader = document.querySelector('.preloader');
+    var fadeEffect = setInterval(function() {
+      if (!preloader.style.opacity) {
+        preloader.style.opacity = 1;
+      }
+      if (preloader.style.opacity > 0) {
+        preloader.style.opacity -= 0.1;
+      } else {
+        clearInterval(fadeEffect);
+        preloader.style.display = 'none';
+      }
+    }, 100);
+  }, 5000);
+  </script>
+</div> 
+<div class="backgroundimg">
+    <img src="img/background.jpg" alt="">
+</div>
+<div class="logo">
+        <img src="img/audi-logo.png" alt="">
+<script>
+   item.onmouseenter = function(){
+   this.classList.add('hovered');
+}
+
+item.onmouseleave = function(){
+   setTimeout(function(){
+      this.classList.remove('hovered');
+   }.bind(this),1000)
+}
+</script>
+<div class="nav">
+    <nav class="navMenu">
+      <a href="/index.html">Početna</a>
+      <a href="/about.html"> O nama</a>
+      <a href="/location.html">Lokacija</a>
+      <a href="/contact.html">Kontakt</a>
+      <div class="dot"></div>
+    </nav>
+</div>
+</div>
+<div id="slideshow">
+    <div class="slideshow-container">
+  
+      <div class="mySlides fade">
+        <img src="img/q4 etron.jpg" style="width:100%">
+        <div class="text">Novi Q4 sportback e-tron.</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="img/etron sportback.jpg" style="width:100%">
+        <div class="text">e-tron Sportback</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="img/a3sb.jpg" style="width:100%">
+        <div class="text">Najljepši Hatchback - A3.</div>
+    </div>
+      <div class="mySlides fade">
+        <img src="img/a4.jpg" style="width:100%">
+        <div class="text">A4 je novo ime sportskog duha.</div>
+    </div>
+      <div class="mySlides fade">
+        <img src="img/a6 (2).jpg" style="width:100%">
+        <div class="text">Uvijek pouzdani Audi A6</div>
+    </div>
+      <div class="mySlides fade">
+        <img src="img/a7.jpg" style="width:100%">
+        <div class="text">Novi Audi A7 Sportback</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="img/a8.jpg" style="width:100%">
+        <div class="text">Dobrodošli u budućnost! Novi Audi A8.</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="img/q3.jpg" style="width:100%">
+        <div class="text">Svestrani talent - Q3</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="img/q5.jpg" style="width:100%">
+        <div class="text">Novi Audi Q5</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="img/q7.jpg" style="width:100%">
+        <div class="text">Prava veličina ne poznaje granice. Q7</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="img/q8.jpg" style="width:100%">
+        <div class="text">Novo lice Q-porodice - Audi Q8</div>
+    </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot1" onclick="currentSlide(1)"></span>
+      <span class="dot1" onclick="currentSlide(2)"></span>
+      <span class="dot1" onclick="currentSlide(3)"></span>
+      <span class="dot1" onclick="currentSlide(4)"></span>
+      <span class="dot1" onclick="currentSlide(5)"></span>
+      <span class="dot1" onclick="currentSlide(6)"></span>
+      <span class="dot1" onclick="currentSlide(7)"></span>
+      <span class="dot1" onclick="currentSlide(8)"></span>
+      <span class="dot1" onclick="currentSlide(9)"></span>
+      <span class="dot1" onclick="currentSlide(10)"></span>
+      <span class="dot1" onclick="currentSlide(11)"></span>
+    </div>
+  </div>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+  
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+  
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot1");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    setInterval(function () {
+      plusSlides(1);
+    }, 7000);
+  </script>
+
+<div class="Audi">
+    <img src="img/logo1.png" width=30% alt="">
+</div>
+<div class="AudiContent">Uspjeh u znaku četiri prstena</div>
+
+<div class="button-container" >
+    <a class="button" href="https://www.audi.ba/q4/q4-sportback-e-tron/fascinacija" target="_blank">Q4e</a>
+    <a class="button" href="https://www.audi.ba/svijet-dozivljaja/e-mobilitaet" target="_blank">e-tron</a>
+    <a class="button" href="https://www.audi.ba/a3/a3-sportback-2020/pregled" target="_blank">A3</a>
+    <a class="button" href="https://www.audi.ba/a4/a4-limousine-2019/fascinacija" target="_blank">A4</a>
+    <a class="button" href="https://www.audi.ba/a6/a6-limousine-1/ueberblick" target="_blank">A6</a>
+    <a class="button" href="https://www.audi.ba/a7/novi-a7-sportback/pregled" target="_blank">A7</a>
+    <a class="button" href="https://www.audi.ba/a8/novi-a8/pregled" target="_blank">A8</a>
+    <a class="button" href="https://www.audi.ba/q3/novi-q3/fascinacija-1" target="_blank">Q3</a>
+    <a class="button" href="https://www.audi.ba/q5/q5-2021/pregled" target="_blank">Q5</a>
+    <a class="button" href="https://www.audi.ba/q7/q7/pregled" target="_blank">Q7</a>
+    <a class="button" href="https://www.audi.ba/q8/q8/fascinacija" target="_blank">Q8</a>
+  </div>
+  <br>
+  <hr>
+  <div style="margin-top: 1rem;
+  font-family: Bebas Neue">
+<h1 style="color: black">
+Najstariji vs Najnoviji
+</h1>
+</div>
+<div>
+<div class="image-slider">
+<div><img src="img/audi72.jpg" alt="Audi 72"/>
+</div><img src="img/audiq8.jpg"  alt="Audi Q8"/>
+</div>
+</div>
+<br>
+<hr>
+<br>
+<div class="button1" onclick="window.open('https://konfigurator.audi.ba/cc-ba/bs_BA_AUDI19/A/models')">
+    KONFIGURIŠI SVOJE NOVO AUDI VOZILO
+  </div>
+  <br>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/hr_HR/sdk.js#xfbml=1&version=v15.0" nonce="fmUcruKA"></script>
+  <div class="fb-page" data-href="https://www.facebook.com/AudiDE/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/AudiDE/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/AudiDE/">Audi Deutschland</a></blockquote></div>
+ <iframe src="https://www.instagram.com/p/Cjx5dKxo0xa/embed" width="320" height="52" frameborder="0" scrolling="no" allowtransparency="true" ></iframe>
+  
+<div class="vertical"></div>
+<div class="contactform">
+<h2>Ugovorite testnu vožnju</h2>
+<form action="https://formsubmit.co/7c3380d887d6bb6bc4174c16ce0f1db5" method="POST" />
+<input type="text" name="name" placeholder="Vaše ime i prezime" maxlength="120" required>
+<input type="number" name="number" placeholder="Vaš broj telefona" required>
+<input type="email" name="email" placeholder="Vaša email adresa" required>
+<input type="hidden" name="_subject" value="Novi unos!">
+<input type="hidden" name="_autoresponse" value="Primili smo Vašu prijavu za testnu vožnju! Naši agenti će Vas kontaktirati u što skorijem periodu za dogovor termina testne vožnje. Hvala Vam na povjerenju!">
+<input type="hidden" name="_template" value="table">
+<select name="Vozilo koje želite testirati">
+  <option>Audi A3 Sportback</option>
+  <option>Audi A4</option>
+  <option>Audi A6</option>
+  <option>Audi A7</option>
+  <option>Audi A8</option>
+  <option>Audi Q3</option>
+  <option>Audi Q4e</option>
+  <option>Audi e-tron</option>
+  <option>Audi Q5</option>
+  <option>Audi Q7</option>
+  <option>Audi Q8</option>
+</select>
+<button id="button2" type="submit">Pošalji</button></div>
+
+
+
+<input type="button" id="button3" onclick="topFunction()" title="Idi na vrh" value="⬆">
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("button3").style.display = "block";
+  } else {
+    document.getElementById("button3").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
+}
+</script>
+
+<div class="copyright">
+  Projektni zadatak iz predmeta "Web arhitekture". Powered by Maid Dubravac (maid.dubravac@fsk.unsa.ba).
+</div>
+
+
+<script>
+    window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };    
+    </script>
+</body>
+</html>
