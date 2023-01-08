@@ -330,6 +330,7 @@ hr{
     display:block;
     border-left: 2px solid black;
     height: 300px;
+    width:2px;
     position: relative;
     left: 50%;
     margin-left: -3px;
